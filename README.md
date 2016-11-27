@@ -3,6 +3,30 @@ iOS封装网络请求接口
 
 # Example Usage
 
+```
+#import "QPNetworking.h"
+
+@property QPNetworking *qPNetworking;
+
+// 得到单例
+_qPNetworking = [QPNetworking getInstance];
+//将_qPNetworking的代理与ViewController连接
+_qPNetworking.delegate = self;
+
+- (void)requestSuccessFeedback:(id)feedbackInfo api:(NSString *)api {
+    if ([api isEqualToString:@"getGroupListByPhone"]) {
+        NSLog(@"相等");
+    }
+    else
+    {
+        NSLog(@"不相等");
+    }
+}
+
+- (void)requestFailFeedback:(id)failInfo api:(NSString *)api {
+}
+```
+
 - QPNetworking.h
 ```
 #import <Foundation/Foundation.h>

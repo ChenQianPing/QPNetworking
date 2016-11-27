@@ -6,7 +6,9 @@ iOS封装网络请求接口
 ```
 #import "QPNetworking.h"
 
+@interface YGCOfficeAllProTableViewController () <QPNetworkingDelegate>
 @property QPNetworking *qPNetworking;
+@end
 
 // 得到单例
 _qPNetworking = [QPNetworking getInstance];

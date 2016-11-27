@@ -13,6 +13,8 @@ _qPNetworking = [QPNetworking getInstance];
 //将_qPNetworking的代理与ViewController连接
 _qPNetworking.delegate = self;
 
+[_qPNetworking getGroupListByPhone];
+
 - (void)requestSuccessFeedback:(id)feedbackInfo api:(NSString *)api {
     if ([api isEqualToString:@"getGroupListByPhone"]) {
         NSLog(@"相等");

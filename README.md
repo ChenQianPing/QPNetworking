@@ -1,5 +1,5 @@
 # QPNetworking
-- [iOS封装网络请求接口](http://www.jianshu.com/p/8e9428c787fb)
+详见[iOS封装网络请求接口](http://www.jianshu.com/p/8e9428c787fb)
 
 # Example Usage
 
